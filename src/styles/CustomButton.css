@@ -1,10 +1,23 @@
+:root {
+    --Bg-btn-number: #D6E6F0
+    --Bg-btn-operation-basic: #B1CBDC
+    --Bg-btn-operation-advanced: #B1CBDC
+    --Bg-btn-action: #D6E6F0
+}
+
+
 .custom-btn {
     width: 50px;
     height: 50px;
+    border: none;
 }
 
-.btn-number{}
+.btn-number{
+    
+}
 
-.btn-operation{}
+.btn-operation-basic{}
+
+.btn-operation-advanced{}
 
 .btn-action{}
