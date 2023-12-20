@@ -1,10 +1,24 @@
 const CustomButton = (props) => {
-    const {label, value, typeButton} = props
+  const { label, value, typeButton } = props;
 
-    return (
-        <button>{label}</button>
-    )
+  const typeButtonClass = (typeButton) => {
+    switch (typeButton) {
+      case "number":
+        return "btn-number";
+      case "operation":
+        return "btn-operation";
+      case "action":
+        return "btn-action";
+      default:
+        return null;
+    }
+  };
 
-}
+  return (
+    <button className={`custom-btn ${typeButtonClass(typeButton)}`}>
+      {label}
+    </button>
+  );
+};
 
-export default CustomButton
+export default CustomButton;
