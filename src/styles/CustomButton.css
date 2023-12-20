@@ -1,8 +1,8 @@
 :root {
-    --Bg-btn-number: #D6E6F0
-    --Bg-btn-operation-basic: #B1CBDC
-    --Bg-btn-operation-advanced: #B1CBDC
-    --Bg-btn-action: #D6E6F0
+    --Bg-btn-number: #D6E6F0;
+    --Bg-btn-operation-basic: #F5CF5D;
+    --Bg-btn-operation-advanced: #B1CBDC;
+    --Bg-btn-action: #E87A72;
 }
 
 
@@ -13,11 +13,17 @@
 }
 
 .btn-number{
-    
+    background-color: var(--Bg-btn-number);
 }
 
-.btn-operation-basic{}
+.btn-operation-basic{
+    background-color: var(--Bg-btn-operation-basic);
+}
 
-.btn-operation-advanced{}
+.btn-operation-advanced{
+    background-color: var(--Bg-btn-operation-advanced);
+}
 
-.btn-action{}
+.btn-action{
+    background-color: var(--Bg-btn-action);
+}
