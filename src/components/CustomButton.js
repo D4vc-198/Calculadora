@@ -1,3 +1,5 @@
+import './../styles/CustomButton.css'
+
 const CustomButton = (props) => {
   const { label, value, typeButton } = props;
 
