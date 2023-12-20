@@ -1,11 +1,11 @@
-import CustomButton from './components/CustomButton';
-import logo from './logo.svg';
-import './styles/App.css';
+import CustomButton from "./components/CustomButton";
+import logo from "./logo.svg";
+import "./styles/App.css";
 
 function App() {
   return (
-    <div className="App">
-    <CustomButton label="1"/>
+    <div className="calculator-container">
+      <CustomButton label="1" />
     </div>
   );
 }
