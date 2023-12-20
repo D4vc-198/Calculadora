@@ -13,6 +13,7 @@
 }
 
 .btn-number{
+    color: #636363;
     background-color: var(--Bg-btn-number);
 }
 

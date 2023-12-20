@@ -14,7 +14,7 @@ const CustomButton = (props) => {
       case "action":
         return "btn-action";
       default:
-        return null;
+        return "";
     }
   };
 
