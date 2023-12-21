@@ -1,6 +1,6 @@
 :root {
     --Bg-btn-number: #E9F0F4;
-    --Bg-btn-operation-basic: #F5CF5D;
+    --Bg-btn-operation-basic: #FF9500;
     --Bg-btn-operation-advanced: #B1CBDC;
     --Bg-btn-action: #E87A72;
 }
@@ -31,6 +31,7 @@
 }
 
 .btn-operation-basic {
+    color: #FFF;
     background-color: var(--Bg-btn-operation-basic);
 }
 
