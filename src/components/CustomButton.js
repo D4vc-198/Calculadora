@@ -19,7 +19,7 @@ const CustomButton = (props) => {
   };
 
   return (
-    <button className={`custom-btn ${typeButtonClass(typeButton)}`}>
+    <button className={`custom-btn ${typeButtonClass(typeButton)}`} value={value}>
       {label}
     </button>
   );
