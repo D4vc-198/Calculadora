@@ -5,7 +5,29 @@ import "./styles/App.css";
 function App() {
   return (
     <div className="calculator-container">
-      <CustomButton typeButton="number" label="1" />
+      <div className="calculator-screen-container"></div>
+      <div className="calculator-buttons-container">
+        <CustomButton typeButton="number" label="1" />
+        <CustomButton typeButton="number" label="1" />
+        <CustomButton typeButton="number" label="1" />
+        <CustomButton typeButton="number" label="1" />
+        <CustomButton typeButton="number" label="1" />
+        <CustomButton typeButton="number" label="1" />
+        <CustomButton typeButton="number" label="1" />
+        <CustomButton typeButton="number" label="1" />
+        <CustomButton typeButton="number" label="1" />
+        <CustomButton typeButton="number" label="1" />
+        <CustomButton typeButton="number" label="1" />
+        <CustomButton typeButton="number" label="1" />
+        <CustomButton typeButton="number" label="1" />
+        <CustomButton typeButton="number" label="1" />
+        <CustomButton typeButton="number" label="1" />
+        <CustomButton typeButton="number" label="1" />
+        <CustomButton typeButton="number" label="1" />
+        <CustomButton typeButton="number" label="1" />
+        <CustomButton typeButton="number" label="1" />
+        <CustomButton typeButton="number" label="1" />
+      </div>
     </div>
   );
 }
