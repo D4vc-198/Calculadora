@@ -7,24 +7,36 @@
 
 
 .custom-btn {
-    width: 80px;
-    height: 80px;
-    border: 1px solid #FFF;
+    width: 68px;
+    height: 68px;
+    border: none;
+    border-radius: 10px;
+    margin: 6px;
+    /* el margin lo hacen la suma de lo que se le resta al width y height */
+    /*
+    arriba(height) = 6
+    abajo(height) = 6 
+    TOTAL = 12
+
+    izquierda(width) = 6
+    derecha(width) = 6
+    TOTAL = 12
+    */
 }
 
-.btn-number{
+.btn-number {
     color: #636363;
     background-color: var(--Bg-btn-number);
 }
 
-.btn-operation-basic{
+.btn-operation-basic {
     background-color: var(--Bg-btn-operation-basic);
 }
 
-.btn-operation-advanced{
+.btn-operation-advanced {
     background-color: var(--Bg-btn-operation-advanced);
 }
 
-.btn-action{
+.btn-action {
     background-color: var(--Bg-btn-action);
 }
