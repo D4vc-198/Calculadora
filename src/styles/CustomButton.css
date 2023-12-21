@@ -1,5 +1,5 @@
 :root {
-    --Bg-btn-number: #D6E6F0;
+    --Bg-btn-number: #E9F0F4;
     --Bg-btn-operation-basic: #F5CF5D;
     --Bg-btn-operation-advanced: #B1CBDC;
     --Bg-btn-action: #E87A72;
@@ -26,7 +26,7 @@
 }
 
 .btn-number {
-    color: #636363;
+    color: #000;
     background-color: var(--Bg-btn-number);
 }
 
