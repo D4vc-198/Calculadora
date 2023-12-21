@@ -14,12 +14,12 @@ body {
 
 .calculator-screen-container {
   width: 100%;
-  height: 80px;
+  height: 100px;
   background-color: #FFF;
 }
 
 .calculator-buttons-container {
   width: 100%;
-  /* 500 - 80 = 420 */
+  /* 500 - 100 = 400 */
   height: 100%;
 }
