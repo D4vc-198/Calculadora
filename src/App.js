@@ -15,9 +15,7 @@ function App() {
   }
 
   const delNumber = () => {
-    let text = Array.from(screenText)
-    text.pop()
-    setScreenText(text)
+    setScreenText(screenText.slice(0, -1))
   }
 
   const clearScreen = () => {
