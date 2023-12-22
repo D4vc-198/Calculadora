@@ -1,7 +1,7 @@
 import "./../styles/CustomButton.css";
 
 const CustomButton = (props) => {
-  const { label, value, typeButton } = props;
+  const { value, typeButton, setScreenText } = props;
 
   const typeButtonClass = (typeButton) => {
     switch (typeButton) {
@@ -22,12 +22,17 @@ const CustomButton = (props) => {
     }
   };
 
+  const updateText = (e) => {
+    setScreenText((prevScreenText) => prevScreenText + e.target.value)
+  }
+
   return (
     <button
       className={`custom-btn ${typeButtonClass(typeButton)}`}
       value={value}
+      onClick={(e) => updateText(e)}
     >
-      {label}
+      {value}
     </button>
   );
 };
