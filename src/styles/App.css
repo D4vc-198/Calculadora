@@ -27,6 +27,23 @@ body {
   background-color: #FFF;
 }
 
+.calculator-screen-operation {
+  width: 100%;
+  height: 30px;
+  text-align: right;
+  color: #95989C;
+  font-weight: 500;
+}
+
+.calculator-screen-result {
+  height: 70px;
+  width: 100%;
+  font-weight: 500;
+  font-size: 2em;
+  text-align: right;
+
+}
+
 .calculator-buttons-container {
   width: 100%;
   /* 500 - 100 = 400 */

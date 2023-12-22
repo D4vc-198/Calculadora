@@ -23,7 +23,7 @@ const CustomButton = (props) => {
   };
 
   const updateText = (e) => {
-    setScreenText((prevScreenText) => prevScreenText + e.target.value)
+    setScreenText((prevScreenText) => prevScreenText.length <= 13 ? prevScreenText + e.target.value : prevScreenText)
   }
 
   return (
