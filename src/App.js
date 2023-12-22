@@ -6,7 +6,7 @@ function App() {
     <div className="calculator-container">
       <div className="calculator-screen-container"></div>
       <div className="calculator-buttons-container">
-        <CustomButton typeButton="action" label="AC" />
+        <CustomButton typeButton="action-clear" label="AC" />
         <CustomButton typeButton="operation-advanced" label="&#37;" />
         <CustomButton typeButton="operation-advanced" label="/"/>
         <CustomButton typeButton="number" label="DEL" />
@@ -28,7 +28,6 @@ function App() {
         
         <CustomButton typeButton="number" label="0" />
         <CustomButton typeButton="number" label="." />
-        <CustomButton typeButton="number" label="()" />
         <CustomButton typeButton="operation-basic" label="=" />
       </div>
     </div>

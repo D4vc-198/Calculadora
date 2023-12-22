@@ -11,15 +11,22 @@ const CustomButton = (props) => {
         return "btn-operation-basic";
       case "operation-advanced":
         return "btn-operation-advanced";
-      case "action":
-        return "btn-action";
+      case "action-clear":
+        return "btn-action-clear";
+      case "action-del":
+        return "btn-action-del";
+      case "action-result":
+        return "btn-action-result";
       default:
         return "";
     }
   };
 
   return (
-    <button className={`custom-btn ${typeButtonClass(typeButton)}`} value={value}>
+    <button
+      className={`custom-btn ${typeButtonClass(typeButton)}`}
+      value={value}
+    >
       {label}
     </button>
   );
