@@ -10,8 +10,14 @@ function App() {
     console.log("screenText: ", screenText)
   }, [screenText]);
 
+  // La función eval() es potencialmente peligrosa y puede llevar a código inseguro. Si es posible, evita su uso.
+  // La funcion solo se utilizó para fines de prácticas
   const resultOperation = () => {
-    setResult(eval(screenText))
+    try {
+      setResult(eval(screenText))
+  } catch (e) {
+    setScreenText(screenText.slice(0, -1))
+  }
   }
 
   const delNumber = () => {
