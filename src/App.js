@@ -4,22 +4,39 @@ import "./styles/App.css";
 
 function App() {
   const [screenText, setScreenText] = useState("");
+  const [result, setResult] = useState("");
 
   useEffect(() => {
-    console.log(screenText);
+    console.log("screenText: ", screenText)
   }, [screenText]);
+
+  const resultOperation = () => {
+    setResult(eval(screenText))
+  }
+
+  const delNumber = () => {
+    let text = Array.from(screenText)
+    text.pop()
+    setScreenText(text)
+  }
+
+  const clearScreen = () => {
+    setScreenText("")
+    setResult("")
+  }
 
   return (
     <div className="calculator-container">
       <div className="calculator-screen-container">
         <div className="calculator-screen-operation">{screenText}</div>
-        <div className="calculator-screen-result" max={14} >{screenText}</div>
+        <div className="calculator-screen-result">{result}</div>
       </div>
       <div className="calculator-buttons-container">
         <CustomButton
           typeButton="action-clear"
           value="AC"
           setScreenText={setScreenText}
+          onClick={clearScreen}
         />
         <CustomButton
           typeButton="operation-advanced"
@@ -31,7 +48,7 @@ function App() {
           value="/"
           setScreenText={setScreenText}
         />
-        <CustomButton typeButton="action-del" value="DEL" />
+        <CustomButton typeButton="action-del" value="DEL" onClick={delNumber} />
 
         <CustomButton
           typeButton="number"
@@ -50,7 +67,7 @@ function App() {
         />
         <CustomButton
           typeButton="operation-basic"
-          value="x"
+          value="*"
           setScreenText={setScreenText}
         />
 
@@ -106,7 +123,7 @@ function App() {
           value="."
           setScreenText={setScreenText}
         />
-        <CustomButton typeButton="action-result" value="=" />
+        <CustomButton typeButton="action-result" value="=" onClick={resultOperation}/>
       </div>
     </div>
   );
