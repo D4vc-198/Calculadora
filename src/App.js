@@ -8,7 +8,7 @@ function App() {
       <div className="calculator-buttons-container">
         <CustomButton typeButton="action" label="AC" />
         <CustomButton typeButton="operation-advanced" label="&#37;" />
-        <CustomButton typeButton="operation-advanced" label="&#247;"/>
+        <CustomButton typeButton="operation-advanced" label="/"/>
         <CustomButton typeButton="number" label="DEL" />
 
         <CustomButton typeButton="number" label="7" />
