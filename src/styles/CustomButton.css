@@ -3,6 +3,8 @@
     --Bg-btn-operation-basic: #FF9500;
     --Bg-btn-operation-advanced: #B1CBDC;
     --Bg-btn-action: #E87A72;
+    --Bg-btn-action-del: #F8ECED;
+    --Bg-btn-action-result: #2EC973;
 }
 
 
@@ -40,6 +42,13 @@
     background-color: var(--Bg-btn-operation-advanced);
 }
 
-.btn-action {
-    background-color: var(--Bg-btn-action);
+.btn-action-del, .btn-action-clear {
+    background-color: var(--Bg-btn-action-del);
+    color: #F5424C;
+}
+
+.btn-action-result {
+    width: 112px;
+    background-color: var(--Bg-btn-action-result);
+    color: #FFF;
 }

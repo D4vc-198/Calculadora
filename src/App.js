@@ -9,7 +9,7 @@ function App() {
         <CustomButton typeButton="action-clear" label="AC" />
         <CustomButton typeButton="operation-advanced" label="&#37;" />
         <CustomButton typeButton="operation-advanced" label="/"/>
-        <CustomButton typeButton="number" label="DEL" />
+        <CustomButton typeButton="action-del" label="DEL" />
 
         <CustomButton typeButton="number" label="7" />
         <CustomButton typeButton="number" label="8" />
@@ -28,7 +28,7 @@ function App() {
         
         <CustomButton typeButton="number" label="0" />
         <CustomButton typeButton="number" label="." />
-        <CustomButton typeButton="operation-basic" label="=" />
+        <CustomButton typeButton="action-result" label="=" />
       </div>
     </div>
   );
