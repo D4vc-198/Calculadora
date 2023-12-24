@@ -2,15 +2,25 @@ import { useEffect, useState } from "react";
 import CustomButton from "./components/CustomButton";
 import "./styles/App.css";
 
+export const DarkMode = (app) => {
+  app.style.setProperty("--test-var", "#000");
+};
+
 function App() {
   const [screenText, setScreenText] = useState("");
   const [result, setResult] = useState("");
-  const [darkMode, setDarkMode] = useState(false)
-
+  const [darkMode, setDarkMode] = useState(false);
+  const appContainer = document.getElementById("app-contaier");
 
   useEffect(() => {
     console.log("screenText: ", screenText);
   }, [screenText]);
+
+  // useEffect(() => {
+  //   if (darkMode && appContainer) {
+  //   } else {
+  //   }
+  // }, [darkMode]);
 
   // La función eval() es potencialmente peligrosa y puede llevar a código inseguro. Si es posible, evita su uso.
   // La funcion solo se utilizó para fines de prácticas
@@ -32,7 +42,7 @@ function App() {
   };
 
   return (
-    <>
+    <div id="app-contaier">
       <div className="calculator-container">
         <div className="calculator-screen-container">
           <div className="calculator-screen-operation">{screenText}</div>
@@ -143,11 +153,15 @@ function App() {
       </div>
       <div>
         <label className="switch">
-          <input type="checkbox" checked={darkMode} onChange={(e) => setDarkMode(e.checked)}/>
+          <input
+            type="checkbox"
+            checked={darkMode}
+            onChange={(e) => setDarkMode(e.target.checked)}
+          />
           <span className="slider round"></span>
         </label>
       </div>
-    </>
+    </div>
   );
 }
 
