@@ -49,3 +49,9 @@ body {
   /* 500 - 100 = 400 */
   height: 100%;
 }
+
+@media (preferers-color-scheme: dark) {
+  .calculator-container {
+    background-color: #000;
+  }
+}

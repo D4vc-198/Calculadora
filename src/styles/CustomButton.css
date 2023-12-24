@@ -1,10 +1,18 @@
 :root {
     --Bg-btn-number: #E9F0F4;
+    --Txt-Color-btn-number: #000;
+
     --Bg-btn-operation-basic: #FF9500;
-    --Bg-btn-operation-advanced: #B1CBDC;
-    --Bg-btn-action: #E87A72;
+    --Txt-Color-btn-operation-basic: #000;
+
+    --Bg-btn-operation-advanced: #E9F0F4;
+    --Txt-Color-btn-operation-advanced: #000;
+
     --Bg-btn-action-del: #F8ECED;
+    --Txt-Color-btn-action-del: #F5424C;
+
     --Bg-btn-action-result: #2EC973;
+    --Txt-Color-btn-action-result: #FFF;
 }
 
 
@@ -29,26 +37,27 @@
 }
 
 .btn-number {
-    color: #000;
+    color: var(--Txt-Color-btn-number);
     background-color: var(--Bg-btn-number);
 }
 
 .btn-operation-basic {
-    color: #FFF;
+    color: var(----Txt-Color-btn-operation-basic);
     background-color: var(--Bg-btn-operation-basic);
 }
 
 .btn-operation-advanced {
     background-color: var(--Bg-btn-operation-advanced);
+    color: var(----Txt-Color-btn-operation-advanced);
 }
 
 .btn-action-del, .btn-action-clear {
     background-color: var(--Bg-btn-action-del);
-    color: #F5424C;
+    color: var(--Txt-Color-btn-action-del);
 }
 
 .btn-action-result {
     width: 112px;
     background-color: var(--Bg-btn-action-result);
-    color: #FFF;
+    color: var(--Txt-Color-btn-action-result);
 }
