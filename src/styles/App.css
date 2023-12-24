@@ -1,5 +1,23 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,400;0,500;0,700;0,900;1,900&display=swap');
 
+:root {
+    --Bg-btn-number: #E9F0F4;
+    --Txt-Color-btn-number: #000;
+
+    --Bg-btn-operation-basic: #FF9500;
+    --Txt-Color-btn-operation-basic: #000;
+
+    --Bg-btn-operation-advanced: #E9F0F4;
+    --Txt-Color-btn-operation-advanced: #000;
+
+    --Bg-btn-action-del: #F8ECED;
+    --Txt-Color-btn-action-del: #F5424C;
+
+    --Bg-btn-action-result: #2EC973;
+    --Txt-Color-btn-action-result: #FFF;
+}
+
+
 * {
   font-family: 'Roboto', sans-serif;
 }
