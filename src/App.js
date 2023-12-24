@@ -140,7 +140,7 @@ function App() {
         </div>
       </div>
       <div>
-        <label></label>
+        <label className="switch"></label>
       </div>
     </>
   );
