@@ -5,6 +5,8 @@ import "./styles/App.css";
 function App() {
   const [screenText, setScreenText] = useState("");
   const [result, setResult] = useState("");
+  const [darkMode, setDarkMode] = useState(false)
+
 
   useEffect(() => {
     console.log("screenText: ", screenText);
@@ -141,7 +143,7 @@ function App() {
       </div>
       <div>
         <label className="switch">
-          <input type="checkbox" />
+          <input type="checkbox" checked={darkMode} onChange={(e) => setDarkMode(e.checked)}/>
           <span className="slider round"></span>
         </label>
       </div>
