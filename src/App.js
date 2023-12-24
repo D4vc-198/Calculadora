@@ -2,10 +2,6 @@ import { useEffect, useState } from "react";
 import CustomButton from "./components/CustomButton";
 import "./styles/App.css";
 
-export const DarkMode = (app) => {
-  app.style.setProperty("--test-var", "#000");
-};
-
 function App() {
   const [screenText, setScreenText] = useState("");
   const [result, setResult] = useState("");
