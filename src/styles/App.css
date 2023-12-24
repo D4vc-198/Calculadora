@@ -50,6 +50,13 @@ body {
   height: 100%;
 }
 
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 60px;
+  height: 34px;
+}
+
 @media (preferers-color-scheme: dark) {
   .calculator-container {
     background-color: #000;
