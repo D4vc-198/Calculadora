@@ -140,7 +140,9 @@ function App() {
         </div>
       </div>
       <div>
-        <label className="switch"></label>
+        <label className="switch">
+          <input type="checkbox" />
+        </label>
       </div>
     </>
   );
