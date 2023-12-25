@@ -1,7 +1,8 @@
-export const DarkMode = (app) => {
-  app.style.setProperty("--test-var", "#000");
+export const ChangeDarkMode = (app) => {
+  app.style.setProperty("--Bg-calculator-container", "#000")
 };
 
-export const LightMode = (app) => {
+export const ChangeLightMode = (app) => {
   app.style.setProperty("--test-var", "#000");
+
 };

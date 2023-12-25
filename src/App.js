@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react";
 import CustomButton from "./components/CustomButton";
 import "./styles/App.css";
+import { ChangeDarkMode, ChangeLightMode } from "./utils/changeTheme";
 
 function App() {
   const [screenText, setScreenText] = useState("");
@@ -12,11 +13,13 @@ function App() {
     console.log("screenText: ", screenText);
   }, [screenText]);
 
-  // useEffect(() => {
-  //   if (darkMode && appContainer) {
-  //   } else {
-  //   }
-  // }, [darkMode]);
+  useEffect(() => {
+    if (darkMode && appContainer) {
+      ChangeDarkMode()
+    } else {
+      ChangeLightMode()
+    }
+  }, [darkMode]);
 
   // La función eval() es potencialmente peligrosa y puede llevar a código inseguro. Si es posible, evita su uso.
   // La funcion solo se utilizó para fines de prácticas
