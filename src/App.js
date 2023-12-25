@@ -10,11 +10,9 @@ function App() {
   const appContainer = document.getElementById("app-container");
 
   useEffect(() => {
-    console.log("screenText: ", screenText);
   }, [screenText]);
 
   useEffect(() => {
-    console.log("appContainer", appContainer);
     if (darkMode && appContainer) {
       ChangeDarkMode(appContainer);
     } else if (appContainer) {
