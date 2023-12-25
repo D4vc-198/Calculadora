@@ -1,16 +1,18 @@
 import { useEffect, useState } from "react";
 import CustomButton from "./components/CustomButton";
 import "./styles/App.css";
-import { ChangeDarkMode, ChangeLightMode } from "./utils/changeTheme";
+import { ChangeDarkMode } from "./utils/changeTheme";
 
 function App() {
   const [screenText, setScreenText] = useState("");
   const [result, setResult] = useState("");
-  const [darkMode, setDarkMode] = useState(false);
-  const appContainer = document.getElementById("app-container");
+  let appContainer = "";
 
   useEffect(() => {
-  }, [screenText]);
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+    appContainer = document.getElementById("app-container");
+    console.log("app", appContainer);
+  }, [screenText, appContainer]);
 
   // useEffect(() => {
   //   if (darkMode && appContainer) {
@@ -153,8 +155,8 @@ function App() {
         <label className="switch">
           <input
             type="checkbox"
-            checked={darkMode}
-            onChange={(e) => setDarkMode(e.target.checked)}
+            // checked={darkMode}
+            onChange={(e) => ChangeDarkMode(appContainer, e.target.checked)}
           />
           <span className="slider round"></span>
         </label>

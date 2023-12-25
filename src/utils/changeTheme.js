@@ -1,4 +1,6 @@
 export const ChangeDarkMode = (app, isDark) => {
+  console.log("app", app)
+  console.log("isDark", isDark)
   //Pantalla y contenedor calculadora 
   app.style.setProperty("--Bg-calculator-container", `${isDark ? "#17181A" : "#FFF"}`)
   app.style.setProperty("--Bg-calculator-screen-container", `${isDark ? "#17181A" : "#FFF"}`)
