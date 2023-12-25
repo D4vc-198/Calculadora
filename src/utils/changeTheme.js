@@ -1,9 +1,11 @@
 export const ChangeDarkMode = (app, isDark) => {
-  console.log("app", app)
-  console.log("isDark", isDark)
+  document.body.style.backgroundColor = `${isDark ? "#26272A" : "#ECF3FD"}`
+
+  app.style.setProperty("--BoxShadow-color", `${isDark ? "rgba(149, 157, 165, 0)" : "rgba(149, 157, 165, 0.2)"}`)
   //Pantalla y contenedor calculadora 
   app.style.setProperty("--Bg-calculator-container", `${isDark ? "#17181A" : "#FFF"}`)
   app.style.setProperty("--Bg-calculator-screen-container", `${isDark ? "#17181A" : "#FFF"}`)
+  app.style.setProperty("--Txt-Color-calculator-screen-result", `${isDark ? "#FFF" : "#000"}`)
 
   //Buttons numbers
   app.style.setProperty("--Bg-btn-number", `${isDark ? "#222427" : "#E9F0F4"}`)

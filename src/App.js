@@ -12,14 +12,6 @@ function App() {
     setAppContainer(document.getElementById("app-container"))
   }, [screenText, appContainer]);
 
-  // useEffect(() => {
-  //   if (darkMode && appContainer) {
-  //     ChangeDarkMode(appContainer);
-  //   } else if (appContainer) {
-  //     ChangeLightMode(appContainer);
-  //   }
-  // }, [darkMode, appContainer]);
-
   // La función eval() es potencialmente peligrosa y puede llevar a código inseguro. Si es posible, evita su uso.
   // La funcion solo se utilizó para fines de prácticas
   const resultOperation = () => {
