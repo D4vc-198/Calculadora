@@ -16,9 +16,8 @@ function App() {
   useEffect(() => {
     if (darkMode && appContainer) {
       ChangeDarkMode(appContainer)
-      // appContainer?.style?.setProperty("--Bg-calculator-container", "#000");
     } else {
-      // ChangeLightMode(appContainer)
+      ChangeLightMode(appContainer)
     }
   }, [darkMode]);
 
