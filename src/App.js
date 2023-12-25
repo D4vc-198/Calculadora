@@ -7,7 +7,7 @@ function App() {
   const [screenText, setScreenText] = useState("");
   const [result, setResult] = useState("");
   const [darkMode, setDarkMode] = useState(false);
-  const appContainer = document.getElementById("app-contaier");
+  const appContainer = document.getElementById("app-container");
 
   useEffect(() => {
     console.log("screenText: ", screenText);
@@ -15,9 +15,10 @@ function App() {
 
   useEffect(() => {
     if (darkMode && appContainer) {
-      ChangeDarkMode()
+      ChangeDarkMode(appContainer)
+      // appContainer?.style?.setProperty("--Bg-calculator-container", "#000");
     } else {
-      ChangeLightMode()
+      // ChangeLightMode(appContainer)
     }
   }, [darkMode]);
 
@@ -41,7 +42,7 @@ function App() {
   };
 
   return (
-    <div id="app-contaier">
+    <div id="app-container">
       <div className="calculator-container">
         <div className="calculator-screen-container">
           <div className="calculator-screen-operation">{screenText}</div>
