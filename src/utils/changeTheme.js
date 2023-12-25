@@ -1,29 +1,21 @@
-export const ChangeDarkMode = (app) => {
+export const ChangeDarkMode = (app, isDark) => {
   //Pantalla y contenedor calculadora 
-  app.style.setProperty("--Bg-calculator-container", "#17181A")
-  app.style.setProperty("--Bg-calculator-screen-container", "#17181A")
+  app.style.setProperty("--Bg-calculator-container", `${isDark ? "#17181A" : "#FFF"}`)
+  app.style.setProperty("--Bg-calculator-screen-container", `${isDark ? "#17181A" : "#FFF"}`)
 
   //Buttons numbers
-  app.style.setProperty("--Bg-btn-number", "#222427")
-  app.style.setProperty("--Txt-Color-btn-number", "#FFF")
+  app.style.setProperty("--Bg-btn-number", `${isDark ? "#222427" : "#E9F0F4"}`)
+  app.style.setProperty("--Txt-Color-btn-number", `${isDark ? "#FFF": "#000"}`)
 
-  // app.style.setProperty("--Bg-calculator-container", "#000")
-  // app.style.setProperty("--Bg-calculator-screen-container", "#000")
+  //Buttons operations basic
+  app.style.setProperty("--Txt-Color-btn-operation-basic", `${isDark ? "#FFF" : "#000"}`)
 
-  // app.style.setProperty("--Bg-calculator-container", "#000")
-  // app.style.setProperty("--Bg-calculator-screen-container", "#000")
+  //Buttons operation advanced
+  app.style.setProperty("--Bg-btn-operation-advanced", `${isDark ? "#222427" : "#E9F0F4"}`)
+  app.style.setProperty("--Txt-Color-btn-operation-advanced", `${isDark ? "#FFF" : "#FFF"}`)
 
-  // app.style.setProperty("--Bg-calculator-container", "#000")
-  // app.style.setProperty("--Bg-calculator-screen-container", "#000")
-
-  // app.style.setProperty("--Bg-calculator-container", "#000")
-  // app.style.setProperty("--Bg-calculator-screen-container", "#000")
+    //Buttons operation del
+    app.style.setProperty("--Bg-btn-action-del", `${isDark ? "#2D191E" : "#F8ECED"}`)
 
   
-};
-
-export const ChangeLightMode = (app) => {
-  app.style.setProperty("--Bg-calculator-container", "#FFF")
-  app.style.setProperty("--Bg-calculator-screen-container", "#FFF")
-
 };

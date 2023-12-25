@@ -25,13 +25,13 @@
 }
 
 .btn-operation-basic {
-    color: var(----Txt-Color-btn-operation-basic);
+    color: var(--Txt-Color-btn-operation-basic);
     background-color: var(--Bg-btn-operation-basic);
 }
 
 .btn-operation-advanced {
     background-color: var(--Bg-btn-operation-advanced);
-    color: var(----Txt-Color-btn-operation-advanced);
+    color: var(--Txt-Color-btn-operation-advanced);
 }
 
 .btn-action-del, .btn-action-clear {
