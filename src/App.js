@@ -14,10 +14,11 @@ function App() {
   }, [screenText]);
 
   useEffect(() => {
+    console.log("appContainer", appContainer);
     if (darkMode && appContainer) {
-      ChangeDarkMode(appContainer)
-    } else {
-      ChangeLightMode(appContainer)
+      ChangeDarkMode(appContainer);
+    } else if (appContainer) {
+      ChangeLightMode(appContainer);
     }
   }, [darkMode]);
 
