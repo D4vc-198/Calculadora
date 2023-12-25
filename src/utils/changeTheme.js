@@ -14,7 +14,7 @@ export const ChangeDarkMode = (app, isDark) => {
 
   //Buttons operation advanced
   app.style.setProperty("--Bg-btn-operation-advanced", `${isDark ? "#222427" : "#E9F0F4"}`)
-  app.style.setProperty("--Txt-Color-btn-operation-advanced", `${isDark ? "#FFF" : "#FFF"}`)
+  app.style.setProperty("--Txt-Color-btn-operation-advanced", `${isDark ? "#FFF" : "#000"}`)
 
     //Buttons operation del
     app.style.setProperty("--Bg-btn-action-del", `${isDark ? "#2D191E" : "#F8ECED"}`)

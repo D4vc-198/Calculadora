@@ -6,12 +6,10 @@ import { ChangeDarkMode } from "./utils/changeTheme";
 function App() {
   const [screenText, setScreenText] = useState("");
   const [result, setResult] = useState("");
-  let appContainer = "";
+  const [appContainer, setAppContainer] = useState(null)
 
   useEffect(() => {
-    // eslint-disable-next-line react-hooks/exhaustive-deps
-    appContainer = document.getElementById("app-container");
-    console.log("app", appContainer);
+    setAppContainer(document.getElementById("app-container"))
   }, [screenText, appContainer]);
 
   // useEffect(() => {
