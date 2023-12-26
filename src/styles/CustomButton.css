@@ -61,3 +61,7 @@
     background-color: var(--Bg-btn-action-result);
     color: var(--Txt-Color-btn-action-result);
 }
+
+.btn-action-result:hover {
+    background-color: var(--Bg-btn-action-result-hover);
+}
