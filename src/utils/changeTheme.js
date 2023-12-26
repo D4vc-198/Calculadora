@@ -21,6 +21,7 @@ export const ChangeDarkMode = (app, isDark) => {
 
     //Buttons operation del
     app.style.setProperty("--Bg-btn-action-del", `${isDark ? "#2D191E" : "#F8ECED"}`)
+    app.style.setProperty("--Bg-btn-action-del-hover", `${isDark ? "#49272f" : "#f7dde0"}`)
 
     app.style.setProperty("--Color-Txt-lbl-switch", `${isDark ? "#FFF" : "#000"}`)
 
