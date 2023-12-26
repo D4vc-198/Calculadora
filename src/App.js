@@ -6,10 +6,10 @@ import { ChangeDarkMode } from "./utils/changeTheme";
 function App() {
   const [screenText, setScreenText] = useState("");
   const [result, setResult] = useState("");
-  const [appContainer, setAppContainer] = useState(null)
+  const [appContainer, setAppContainer] = useState(null);
 
   useEffect(() => {
-    setAppContainer(document.getElementById("app-container"))
+    setAppContainer(document.getElementById("app-container"));
   }, [screenText, appContainer]);
 
   // La función eval() es potencialmente peligrosa y puede llevar a código inseguro. Si es posible, evita su uso.
@@ -142,6 +142,7 @@ function App() {
         </div>
       </div>
       <div>
+        <span>Claro</span>
         <label className="switch">
           <input
             type="checkbox"
@@ -149,6 +150,7 @@ function App() {
           />
           <span className="slider round"></span>
         </label>
+        <span>Oscuro</span>
       </div>
     </div>
   );
