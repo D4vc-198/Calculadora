@@ -1,4 +1,4 @@
-<h1 align="center">Calculadora</h1>
+<h1 align="center">Calculadora básica</h1>
 <div align="center">
   <a><img src="https://img.shields.io/badge/Estado%3A-Terminado-success" width="15%"></a>
 </div>
