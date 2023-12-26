@@ -37,6 +37,10 @@
     background-color: var(--Bg-btn-operation-basic);
 }
 
+.btn-operation-basic:hover {
+    background-color: var(--Bg-btn-operation-basic-hover);
+}
+
 .btn-operation-advanced {
     background-color: var(--Bg-btn-operation-advanced);
     color: var(--Txt-Color-btn-operation-advanced);
