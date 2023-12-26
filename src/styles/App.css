@@ -2,6 +2,7 @@
 
 :root {
   --Bg-body: #ECF3FD;
+  --Color-Txt-lbl-switch: #000;
 
   --BoxShadow-color: rgba(149, 157, 165, 0.2);
   --Bg-calculator-container: #FFF;
@@ -85,6 +86,12 @@ body {
   align-items: center;
   justify-content: center;
   margin: 20px 0;
+}
+
+.lbl-switch {
+  font-size: 1.2em;
+  font-weight: 500;
+  color: var(--Color-Txt-lbl-switch);
 }
 
 .switch {
