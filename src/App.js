@@ -145,7 +145,6 @@ function App() {
         <label className="switch">
           <input
             type="checkbox"
-            // checked={darkMode}
             onChange={(e) => ChangeDarkMode(appContainer, e.target.checked)}
           />
           <span className="slider round"></span>
