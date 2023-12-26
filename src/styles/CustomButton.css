@@ -51,6 +51,11 @@
     color: var(--Txt-Color-btn-action-del);
 }
 
+.btn-action-del:hover, .btn-action-clear:hover {
+    background-color: var(--Bg-btn-action-del-hover);
+}
+
+
 .btn-action-result {
     width: 112px;
     background-color: var(--Bg-btn-action-result);
