@@ -142,7 +142,7 @@ function App() {
         </div>
       </div>
       <div className="change-teme-container">
-        <span className="lbl-switch">Claro</span>
+        <span className="lbl-switch">Light</span>
         <label className="switch">
           <input
             type="checkbox"
@@ -150,7 +150,7 @@ function App() {
           />
           <span className="slider round"></span>
         </label>
-        <span className="lbl-switch">Oscuro</span>
+        <span className="lbl-switch">Dark</span>
       </div>
     </div>
   );
