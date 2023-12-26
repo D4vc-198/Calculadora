@@ -9,7 +9,8 @@
 
 <h2>Demo</h2>
 
-![Animation](https://github.com/D4vc-198/calculadora/assets/69604964/07de605b-ab73-4c0b-8abd-3343970e031a)
+![Animation2](https://github.com/D4vc-198/calculadora/assets/69604964/3dc27639-4751-470b-a45d-2c97f1c83ab2)
+
 
 <h2>Dark - Light mode </h2>
 
