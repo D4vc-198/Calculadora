@@ -19,9 +19,17 @@
     */
 }
 
+.custom-btn:hover {
+    cursor: pointer;
+}
+
 .btn-number {
     color: var(--Txt-Color-btn-number);
     background-color: var(--Bg-btn-number);
+}
+
+.btn-number:hover{
+    background-color: var(--Bg-btn-number-hover);
 }
 
 .btn-operation-basic {
