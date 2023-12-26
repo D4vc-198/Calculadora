@@ -141,7 +141,7 @@ function App() {
           />
         </div>
       </div>
-      <div>
+      <div className="change-teme-container">
         <span>Claro</span>
         <label className="switch">
           <input
