@@ -8,6 +8,14 @@
 - Esta calculadora fue implementada utilizando tecnologías web como HTML, CSS y JavaScript. La calculadora es capaz de realizar operaciones aritméticas básicas como suma, resta, multiplicación y división. Además el usuario puede elegir entre temas Claro/Oscuro
 
 <h2>Demo</h2>
+
+![Animation](https://github.com/D4vc-198/calculadora/assets/69604964/07de605b-ab73-4c0b-8abd-3343970e031a)
+
+<h2>Dark - Light mode </h2>
+
+![Animation](https://github.com/D4vc-198/calculadora/assets/69604964/f9e91e0d-1acd-4a3b-961b-02faf480f548)
+
+
 <h2>Tecnologías usadas</h2>
 
 <img src="https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white">&nbsp;<img src="https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white">&nbsp;<img src="https://img.shields.io/badge/JavaScript-323330?style=for-the-badge&logo=javascript&logoColor=F7DF1E">&nbsp;<img src="https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB">
