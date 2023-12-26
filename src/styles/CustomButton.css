@@ -28,7 +28,7 @@
     background-color: var(--Bg-btn-number);
 }
 
-.btn-number:hover{
+.btn-number:hover, .btn-operation-advanced:hover{
     background-color: var(--Bg-btn-number-hover);
 }
 
