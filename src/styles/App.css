@@ -115,6 +115,7 @@ body {
   /* background-color: white; */
   background-image: url("./../assets/sun-solid.svg");
   background-repeat: no-repeat;
+  background-position: center center;
   -webkit-transition: .4s;
   transition: .4s;
 }
