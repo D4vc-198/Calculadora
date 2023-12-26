@@ -10,6 +10,7 @@ export const ChangeDarkMode = (app, isDark) => {
   //Buttons numbers
   app.style.setProperty("--Bg-btn-number", `${isDark ? "#222427" : "#E9F0F4"}`)
   app.style.setProperty("--Txt-Color-btn-number", `${isDark ? "#FFF": "#000"}`)
+  app.style.setProperty("--Bg-btn-number-hover", `${isDark ? "#333539": "#dde4e7"}`)
 
   //Buttons operations basic
   app.style.setProperty("--Txt-Color-btn-operation-basic", `${isDark ? "#FFF" : "#000"}`)
